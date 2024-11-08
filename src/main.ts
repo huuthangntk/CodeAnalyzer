@@ -3,6 +3,16 @@ import { Select } from 'cliffy/prompt/select.ts';
 import { ProjectConfig } from './types/config.ts';
 import { defaultConfig } from './config/default.ts';
 
+/**
+ * Main function that initializes the application, loads configuration, and handles user interaction.
+ * This asynchronous function serves as the entry point for the application, managing the workflow
+ * based on user selection.
+ * 
+ * @returns {Promise<void>} This function doesn't return a value, but completes the selected action.
+ * 
+ * @throws {Deno.errors.NotFound} If the config file is not found when attempting to read.
+ * @throws {SyntaxError} If the config file contains invalid JSON.
+ */
 async function main() {
   let config: ProjectConfig = defaultConfig;
 
