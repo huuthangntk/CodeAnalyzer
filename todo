@@ -1,0 +1,86 @@
+# Updated Code Analyzer Project Roadmap
+
+## Completed Components ✅
+### Phase 1: Foundation
+- [x] Initialize Deno project structure
+- [x] Setup TypeScript configuration
+- [x] Create basic CLI framework
+- [x] Implement configuration validation (Zod)
+- [x] Setup modular folder structure
+
+### Phase 2: File System
+- [x] Implement .docsignore system
+- [x] Create async file scanner
+- [x] Add pattern matching logic
+- [x] Implement concurrent file processor
+- [x] Add streaming for large files
+- [x] Implement progress tracking
+- [x] Create error handling system
+
+## In Progress 🚧
+### Phase 3: AI Integration (Current Focus)
+- [ ] Create provider interface
+  - Define common API structure
+  - Add model configuration types
+  - Implement provider factory
+- [ ] Implement OpenAI integration
+  - Add model listing
+  - Create completion handler
+  - Implement parameter validation
+- [ ] Implement Anthropic integration
+  - Add Claude model support
+  - Create completion handler
+  - Add parameter validation
+- [ ] Create unified response format
+  - Define suggestion schema
+  - Add category separation
+  - Implement formatting
+
+### Phase 4: Enhanced CLI
+- [ ] Create interactive model selection
+  - Add provider selection menu
+  - Implement model fetching
+  - Create parameter configuration
+- [ ] Improve analysis output
+  - Add progress visualization
+  - Create status updates
+  - Implement suggestion formatting
+- [ ] Settings management
+  - Add configuration editor
+  - Create validation system
+  - Implement persistence
+
+## Upcoming Tasks 📋
+### Phase 5: Analysis Features
+- [ ] Implement suggestion categorization
+  - Code improvements
+  - Performance optimizations
+  - Security issues
+  - Bug detection
+- [ ] Add analysis depth options
+- [ ] Create summary generation
+- [ ] Add code metrics
+
+### Phase 6: Output & Organization
+- [ ] Implement file-specific outputs
+- [ ] Create category-based organization
+- [ ] Add markdown formatting
+- [ ] Implement report generation
+
+## Status Overview
+- Total Tasks: 35
+- Completed: 12
+- In Progress: 8
+- Remaining: 15
+
+## Current Priorities
+1. Complete AI provider integration
+2. Implement model selection interface
+3. Add suggestion categorization
+4. Enhance output formatting
+
+## Dependencies
+- Deno 2.0+
+- TypeScript 5.0+
+- OpenAI API
+- Claude API
