@@ -15,6 +15,15 @@ export interface ScannedFile {
   extension: string;
 }
 
+/**
+ * Scans a directory for files based on specified options
+ * @param {string} dir - The directory path to scan
+ * @param {ScanOptions} [options={}] - Optional scan configuration
+ * @param {number} [options.concurrent=5] - Number of concurrent operations
+ * @param {string[]} [options.extensions=[]] - File extensions to include
+ * @param {string} [options.ignorePath='.docsignore'] - Path to ignore file
+ * @returns {Promise<ScannedFile[]>} Array of scanned file objects
+ */
 export async function scanDirectory(
   dir: string,
   options: ScanOptions = {}
